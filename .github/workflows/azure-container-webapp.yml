@@ -60,5 +60,5 @@ jobs:
         with:
           push: true
           context: ./backend/
-          tags: reconnect.azurecr.io/${{ env.REPO }}:${{ github.sha }}
+          tags: reconnect.azurecr.io/reconnect-backend:${{github.run_number}}
           file: ./backend/Dockerfile
