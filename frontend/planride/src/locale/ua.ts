@@ -1,0 +1,77 @@
+export default {
+  Home: {
+    Title:
+      "PlanRide - Допомагаємо біженцям з України знайти транспорт до місця прихистку у Данії.",
+    Slogan:
+      "Ми допомагаємо біженцям з України знайти транспорт від кордону ЄС до місця прихистку у Данії.",
+    NeedTransport: "Мені потрібен транспорт",
+    ProvideTransport: "Я можу надати транспорт",
+    Offers: "Варіантів поїздок",
+    Requests: "Заявок",
+  },
+  CreateTransportationOffer: {
+    Title: "Запропонувати перевезення",
+    Subtitle:
+      "Опишіть ваші можливості: звідки і куди ви їдете, скільки місць у вашому транспортному засобі, дату та час відправлення.",
+    DepartureTitle: "Пункт відправлення",
+    DestinationTitle: "Пункт призначення",
+    PassengersTitle: "Пасажири",
+    ContactPersonTitle: "Контакт",
+    OtherTitle: "Інше",
+    DepartureCountry: "Країна відправлення",
+    DepartureLocation: "Місце відправлення",
+    DepartureDate: "Дата відправлення",
+    DepartureTime: "Час відправлення",
+    DestinationCountry: "Країна призначення",
+    DestinationLocation: "Місце призначення",
+    NumberOfSeats: "Кількість місць",
+    FirstName: "Імʼя",
+    LastName: "Прізвище",
+    Email: "Адреса е-mail",
+    Mobile: "Мобільний телефон",
+    Comments: "Коментар",
+    Send: "Відправити",
+    Errors: {
+      RequiredField: "Це поле обовʼязкове для заповнення",
+      Email: "Введіть корректну адресу e-mail",
+    },
+  },
+  CreateTransportationRequest: {
+    Title: "Запит на перевезення",
+    Subtitle:
+      "Опишіть свою ситуацію: скільки людей, де ви знаходитесь, скільки дорослих, дітей, коли ви готові їхати.",
+    DepartureTitle: "Відправлення",
+    PassengersTitle: "Пасажири",
+    ContactPersonTitle: "Контакт",
+    OtherTitle: "Інше",
+    DepartureCountry: "Країна відправлення",
+    DepartureLocation: "Місце відправлення",
+    DepartureDate: "Дата відправлення",
+    DepartureDateHelp:
+      "Вкажіть дату відправлення з урахуванням часу, який побрібен щоб дістатись до місця відправлення.",
+    Adults: "Кількість дорослих",
+    Children: "Кількість дітей",
+    Pets: "К-сть домашніх тварин",
+    FirstName: "Імʼя",
+    LastName: "Прізвище",
+    Email: "Адреса е-mail",
+    Mobile: "Мобільний телефон",
+    Comments: "Коментар",
+    Send: "Відправити",
+  },
+  Signup: {
+    PageTitle: "Реєстрація нового користувача",
+    Title: "Реєстрація",
+    Subtitle:
+      "Зареєструйтеся щоб додати ваші запити або пропозиції перевезення. ",
+    FirstName: "Імʼя",
+    LastName: "Прізвище",
+    Email: "Адреса е-mail",
+    Mobile: "Мобільний телефон",
+    Register: "Зареєструватися",
+  },
+  Errors: {
+    RequiredField: "Це поле обовʼязкове для заповнення",
+    Email: "Введіть корректну адресу e-mail",
+  },
+};

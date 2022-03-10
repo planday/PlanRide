@@ -1,0 +1,15 @@
+@model PlanRide.Api.Models.Login.LoginViewModel
+@if (ViewContext.ModelState.IsValid == false)
+{
+    <div class="alert alert-danger mg-t-10 mg-b-10" role="alert">
+        <ul>
+            @foreach (var modelState in ViewContext.ModelState.Values)
+            {
+                foreach (var error in modelState.Errors)
+                { 
+                    <li style="list-style: none"><i class="zmdi zmdi-fire"></i>@error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
+}

@@ -1,0 +1,12 @@
+@model PlanRide.Api.Models.Login.RedirectViewModel
+
+<div class="ht-100p d-flex flex-column align-items-center justify-content-center">
+    <div class="wd-70p wd-sm-250 wd-lg-300 mg-b-15">
+        <img src="~/img/" class="img-fluid" alt="">
+    </div>
+    <h1 class="tx-color-01 tx-24 tx-sm-32 tx-lg-36 mg-xl-b-5">You are now being returned to the application.</h1>
+    <h5 class="tx-16 tx-sm-18 tx-lg-20 tx-normal mg-b-20">Once complete, you may close this tab</h5>
+</div>
+
+<meta http-equiv="refresh" content="0;url=@Model.RedirectUrl" data-url="@Model.RedirectUrl">
+<script src="~/js/signin-redirect.js"></script>

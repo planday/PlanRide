@@ -1,0 +1,73 @@
+export default {
+  Home: {
+    Title:
+      "PlanRide - Helping refugees from Ukraine to get to their destinations in Europe",
+    Slogan:
+      "We help Ukrainian refugees to find transportation from the EU borders to Denmark.",
+    NeedTransport: "I need transportation",
+    ProvideTransport: "I can provide transportation",
+    Offers: "Transportation offers",
+    Requests: "Transportation requests",
+  },
+  CreateTransportationRequest: {
+    Title: "Create transportation request",
+    Subtitle:
+      "Describe your group: how many people, where you are located, how many adults and children, when you have arrived or going to arrive to the pick-up point.",
+    DepartureTitle: "Departure",
+    PassengersTitle: "Passengers",
+    ContactPersonTitle: "Contact person",
+    OtherTitle: "Other",
+    DepartureCountry: "Departure country",
+    DepartureLocation: "Departure location",
+    DepartureDate: "Departure date",
+    DepartureDateHelp: "If you are already in the departure point, choose the current date, otherwise specify the date when you shall arrive to the departure point.",
+    Adults: "Number of adults",
+    Children: "Number of children",
+    Pets: "Number of pets",
+    FirstName: "First name",
+    LastName: "Last name",
+    Email: "E-mail address",
+    Mobile: "Mobile",
+    Comments: "Comments",
+    Send: "Send",
+  },
+  CreateTransportationOffer: {
+    Title: "Create transportation offer",
+    Subtitle:
+      "Describe your capabilities: where you are driving from and to, how many seats do you have, date and time of departure.",
+    DepartureTitle: "Departure",
+    DestinationTitle: "Destination",
+    PassengersTitle: "Passengers",
+    ContactPersonTitle: "Contact person",
+    OtherTitle: "Other",
+    DepartureCountry: "Departure country",
+    DepartureLocation: "Departure location",
+    DepartureDate: "Departure date",
+    DepartureTime: "Departure time",
+    DestinationCountry: "Destination country",
+    DestinationLocation: "Destination location",
+    NumberOfSeats: "Number of seats",
+    FirstName: "First name",
+    LastName: "Last name",
+    Email: "E-mail address",
+    Mobile: "Mobile",
+    Comments: "Comments",
+    Send: "Send",
+  },
+  Signup: {
+    PageTitle: "Registration: create new user account",
+    Title: "Create user account",
+    Subtitle:
+      "Please register to be able to add your transportation offers or requests, and see the other people's contact details. ",
+    FirstName: "First name",
+    LastName: "Last name",
+    Email: "E-mail address",
+    Mobile: "Mobile",
+    Register: "Register",
+  },
+  Errors: {
+    RequiredField: "This field is required",
+    Email: "Enter a valid e-mail address",
+    ServerError: "An unknown server occured. Please retry the operation."
+  },
+};

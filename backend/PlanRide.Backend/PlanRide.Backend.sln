@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanRide.Api", "PlanRide.Api\PlanRide.Api.csproj", "{8FB6FEC4-2513-4AF2-9E0A-547729157917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanRide.Infrastructure", "PlanRide.Infrastructure\PlanRide.Infrastructure.csproj", "{192C3F47-7653-47A0-9137-0543627A809D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FB6FEC4-2513-4AF2-9E0A-547729157917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB6FEC4-2513-4AF2-9E0A-547729157917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB6FEC4-2513-4AF2-9E0A-547729157917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB6FEC4-2513-4AF2-9E0A-547729157917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192C3F47-7653-47A0-9137-0543627A809D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192C3F47-7653-47A0-9137-0543627A809D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192C3F47-7653-47A0-9137-0543627A809D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192C3F47-7653-47A0-9137-0543627A809D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+@model PlanRide.Api.Models.Login.LoginViewModel
+
+<div class="bg-full-page bg-primary back-fixed">
+    <div class="mw-500 absolute-center">
+        <div class="card color-dark animated zoomInDown animation-delay-5">
+            <div class="card-body">
+                <h1 class="color-primary">Sign in</h1>
+                <form asp-route="Login">
+                    <input type="hidden" asp-for="ReturnUrl"/>
+                    <fieldset>
+                        <div class="form-group label-floating">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="zmdi zmdi-account"></i>
+                                </span>
+                                <label class="control-label" asp-for="Username">Email</label>
+                                <input type="text" class="form-control" asp-for="Username" autofocus/>
+                            </div>
+                        </div>
+                        <div class="form-group label-floating">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="zmdi zmdi-lock"></i>
+                                </span>
+                                <label class="control-label" asp-for="Password">Password</label>
+                                <input type="password" id="ms-form-pass" class="form-control" asp-for="Password"/>
+                            </div>
+                        </div>
+                        <div class="form-group" class="control-label">
+                            <label asp-for="RememberLogin">
+                                <input type="checkbox" asp-for="RememberLogin"> Remember
+                            </label>
+                        </div>
+                        <partial name="_ValidationSummary"/>
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <button class="btn btn-raised btn-primary btn-block" name="button" value="login">Login <i class="zmdi zmdi-long-arrow-right no-mr ml-1"></i></button>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="@Model.WebAppUrl/signup" class="btn btn-primary btn-block"><i class="zmdi zmdi-account-add mr-1"></i> Sign Up</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+        <div class="text-center animated fadeInUp animation-delay-7">
+            <a href="@Model.WebAppUrl/account/reset-password-request" class="btn btn-white"><i class="zmdi zmdi-key"></i> Reset password</a>
+        </div>
+    </div>
+</div>
