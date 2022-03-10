@@ -49,8 +49,8 @@ jobs:
         uses: docker/login-action@v1.10.0
         with:
           registry: reconnect.azurecr.io
-          username: ${{ azurecr.user }}
-          password: ${{ azurecr.token }}
+          username: ${{ secrets.AZURECRTOKEN }}
+          password: ${{ secrets.AZURECRUSER }}
 
       - name: Lowercase the repo name and username
         run: echo "REPO=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
