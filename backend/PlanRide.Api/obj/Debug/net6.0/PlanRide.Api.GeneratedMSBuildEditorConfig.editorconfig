@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PlanRide.Api
 build_property.RootNamespace = PlanRide.Api
-build_property.ProjectDir = /Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/
+build_property.ProjectDir = /Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api
+build_property.MSBuildProjectDirectory = /Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/Views/Login/Login.cshtml]
+[/Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/Views/Shared/Error.cshtml]
+[/Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/Views/Shared/Redirect.cshtml]
+[/Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/Views/Shared/Redirect.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1JlZGlyZWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/Views/Shared/_Layout.cshtml]
+[/Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/Views/Shared/_ValidationSummary.cshtml]
+[/Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/Views/Shared/_ValidationSummary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/Views/_ViewImports.cshtml]
+[/Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mortenduus/source/PlanRide/backend/PlanRide.Backend/PlanRide.Api/Views/_ViewStart.cshtml]
+[/Users/artem/Documents/Personal/ReConnect/backend/PlanRide.Api/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

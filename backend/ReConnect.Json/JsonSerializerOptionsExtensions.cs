@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace PlanRide.Api.Utils;
+namespace ReConnect.Json;
 
 public static class JsonSerializerOptionsExtensions
 {
