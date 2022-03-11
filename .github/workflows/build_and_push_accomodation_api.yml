@@ -55,5 +55,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.ACCOMODATION_PUBLISH_PROFILE }}
+          publish-profile: '${{ secrets.ACCOMODATION_PUBLISH_PROFILE }}'
           images: 'reconnect.azurecr.io/accommodation-api:${{github.run_number}}'
