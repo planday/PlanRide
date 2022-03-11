@@ -3,19 +3,15 @@ using FluentValidation.AspNetCore;
 using IdentityServer4.Configuration;
 using IdentityServer4.Models;
 using IdentityServer4.Services;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Any;
-using Microsoft.OpenApi.Models;
 using PlanRide.Api.Identity;
 using PlanRide.Api.Models;
 using PlanRide.Api.Services;
-using PlanRide.Api.Utils;
 using PlanRide.Infrastructure;
 using PlanRide.Infrastructure.EntityFramework;
+using ReConnect.Json;
+using ReConnect.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,31 +28,12 @@ builder.Services
     })
     .AddFluentValidation()
     .AddJsonOptions(o => { serializerOptions.ApplyTo(o.JsonSerializerOptions); });
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SupportNonNullableReferenceTypes();
-    c.SchemaFilter<IgnoreReadOnlySchemaFilter>();
-    c.SchemaFilter<RequiredNotNullableSchemaFilter>();
-    c.OperationFilter<SecurityRequirementsOperationFilter>();
 
-    c.MapType(typeof(DateOnly),
-        () => new OpenApiSchema
-        {
-            Type = "string",
-            Format = "date",
-            Example = new OpenApiString("2018-12-31"),
-            Description = "ISO-8601 date string"
-        });
-    c.MapType(typeof(TimeOnly),
-        () => new OpenApiSchema
-        {
-            Type = "string",
-            Example = new OpenApiString("16:45"),
-            Description = "ISO-8601 time string (HH:mm)"
-        });
-});
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddReConnectSwagger("Re:Connect Transportation API",
+    "Supports user journeys related with transportation offers and transportation requests.",
+    Path.Combine(Path.GetDirectoryName(typeof(TransportationOfferViewModel).Assembly.Location) ?? "",
+        "PlanRide.Api.xml"));
 builder.Services.AddTransient<IProfileService, ProfileService>();
 builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddDbContext<PlanRideDb>(options =>
@@ -112,15 +89,14 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
 
     var context = services.GetRequiredService<PlanRideDb>();
-    context.Database.EnsureCreated();
+    // context.Database.EnsureCreated();
     // DbInitializer.Initialize(context);
 }
 
 app.UseRouting();
 app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseStaticFiles();
-app.UseSwagger();
-app.UseSwaggerUI();
+app.UseReConnectSwagger();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

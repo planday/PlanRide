@@ -14,6 +14,11 @@ namespace PlanRide.Api.Controllers
             _signupService = signupService;
         }
 
+        /// <summary>
+        /// Creates new user account and sends a notification to the specified e-mail address
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost("signup", Name = "Signup")]
         public async Task<IActionResult> Signup([FromBody] SignupInputModel model)
         {
