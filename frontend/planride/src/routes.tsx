@@ -9,6 +9,7 @@ import Requests from "./pages/Requests";
 import Request from "./pages/Request";
 import Offers from "./pages/Offers";
 import Signup from "./pages/Signup";
+import Information from "./pages/Information";
 
 const Router: React.FC = () => {
   return useRoutes([
@@ -36,6 +37,7 @@ const Router: React.FC = () => {
         },
         { path: "offers", element: <Offers /> },
         { path: "signup", element: <Signup /> },
+        { path: "information", element: <Information /> },
       ],
     },
   ]);

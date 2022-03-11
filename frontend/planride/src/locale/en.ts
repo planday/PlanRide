@@ -70,4 +70,21 @@ export default {
     Email: "Enter a valid e-mail address",
     ServerError: "An unknown server occured. Please retry the operation."
   },
+  Information: {
+    PageTitle: "Informational disclaimer and GDPR",
+    Title: "Information",
+    InfoBody: "The purpose of this app is to connect refugees from Ukraine with “friends” willing to host. We call these people “friends” to symbolize the mutual trust needed when welcoming someone into your home as well as entering a stranger’s home. We are exclusively driven by volunteer manpower and the project is not for profit. We believe and hope that gestures of humanity will bring us closer.",
+    DisclaimerTitle: "Disclaimer",
+    DisclaimerBody: "ALL services provided through this app, including shelter, are free of charge. We offer a platform to connect you with refugees, we do not bear the responsibility of anything beyond this platform being e.g. cancellations, mismatch of expectation, harms of any kind and the like.",
+    GDPRTitle: "GDPR",
+    GDPRBody: "You will be able to delete your profile any time you wish, and your contact information will be shared only when you have accepted a request.", 
+  },
+  Buttons: {
+    Next: "Next"
+  },
+  Requests: {
+    Slogan: "Requests",
+    Title: "Request"
+    
+  },
 };

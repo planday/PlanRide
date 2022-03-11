@@ -1,31 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Page from "../components/Page";
 import { Box, Grid, Container, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { styled } from "@mui/material/styles";
 import RequestDetails from "../sections/requests/RequestDetails";
 import { OidcSecure } from "@axa-fr/react-oidc-context";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import RequestDetailsIcon from "../sections/requests/RequestDetailsIcon";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const Request: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { requestId } = useParams();
 
+  useEffect(() => {
+    console.log(requestId)
+  }, [requestId])
+  
+  
   if(!requestId){
     return <React.Fragment></React.Fragment>;
   }
 
+
+
   return (
-    <OidcSecure>
+    // <OidcSecure>
       <Page title={t("Requests.Title")}>
-        <Container maxWidth="md">
+        <Container >
+          {<ArrowBackIosIcon onClick={() => navigate("/requests")}/>}
           <Box sx={{ pb: 5 }}>
-            <Typography variant="body1">{t("Requests.Slogan")}</Typography>
           </Box>
-          <RequestDetails requestId={requestId} />
+          {/* <RequestDetails requestId={requestId} /> */}
+          <RequestDetailsIcon requestId={requestId} />
         </Container>
       </Page>
-    </OidcSecure>
+    // </OidcSecure>
   );
 };
 

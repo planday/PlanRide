@@ -19,7 +19,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
 const CreateTransportationRequest: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <OidcSecure>
+    // <OidcSecure>
       <Page title={t("Home.Title")}>
         <Container maxWidth="md">
           <ContentStyle>
@@ -35,7 +35,7 @@ const CreateTransportationRequest: React.FC = () => {
           </ContentStyle>
         </Container>
       </Page>
-    </OidcSecure>
+    // </OidcSecure>
   );
 };
 
