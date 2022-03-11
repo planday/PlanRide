@@ -5,7 +5,7 @@
 name: Build, push and Deploy Accomodation Api
 
 env:
-  AZURE_WEBAPP_NAME: Accomodation  # set this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: Accommodation  # set this to the name of your Azure Web App
 
 on:
   push:
