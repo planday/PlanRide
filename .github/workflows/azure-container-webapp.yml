@@ -12,6 +12,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      envName:
+
 
 jobs:
   build:
@@ -43,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Development'
+      name: ${{ github.event.inputs.envName }}
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
