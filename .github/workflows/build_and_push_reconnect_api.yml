@@ -40,7 +40,7 @@ jobs:
           push: true
           context: ./backend/
           tags: reconnect.azurecr.io/reconnect-backend:${{github.run_number}}
-          file: ./backend/Dockerfile
+          file: ./backend/PlaneRide.Api.Dockerfile
   deploy:
     runs-on: ubuntu-latest
     needs: build
